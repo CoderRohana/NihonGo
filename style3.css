@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #9b1c31;
+    /* Samurai armor red */
+    --secondary-color: #1c1c1c;
+    /* Lacquered black */
+    --accent-color: #c39738;
+    /* Gold accent for armor details */
+    --bg-color: #f8f5e6;
+    /* Rice paper color */
+    --text-color: #333333;
+    --header-bg: #1c1c1c;
+    --footer-bg: #1c1c1c;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --border-radius: 0px;
+    /* Sharp edges like a katana */
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239b1c31' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    position: relative;
+}
+
+/* Add torn paper effect at the top */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%231c1c1c' fill-opacity='1' d='M0,256L48,261.3C96,267,192,277,288,256C384,235,480,181,576,181.3C672,181,768,235,864,229.3C960,224,1056,160,1152,138.7C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Header styling */
+header {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+/* Add a samurai helmet icon to the header */
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512' fill='%239b1c31' opacity='0.05'%3E%3Cpath d='M320 64c14.4 0 22.3-7.2 30-20.9c7.5-13.3 15-33.9 22.9-60.5C372.9-18.8 330.7 0 320 0c-10.7 0-52.9-18.8-52.9 32.6c7.9 26.6 15.4 47.2 22.9 60.5c7.7 13.8 15.6 21 30 21zm80 32c-17.7 0-32 14.3-32 32v32h64V128c0-17.7-14.3-32-32-32zm96 96H144c-26.5 0-48 21.5-48 48v76.7c0 10.9 3.7 21.5 10.5 30l-31 62C59.6 334.9 48 358.1 48 384c0 11.7 3.1 22.6 8.6 32H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h336V295.7c0-14-4.9-27.7-14-38.5l-19.3-23.2C320.2 300.2 335.6 336 338.2 352H296l-13.6-54.3C256.2 318 224 357.4 224 402.7V448h200c-26.7-21.5-44-54.5-44-92c0-5.4 .4-10.7 1.1-16H640c17.7 0 32-14.3 32-32s-14.3-32-32-32H493c10.4-14.7 17-32.7 17-52c0-39.8-26.3-73.5-62.3-84.7L403.1 176H496zM64 296.7V240c0-8.8 7.2-16 16-16H336.4c1.6 0 3.1 .8 4 2.1l51.5 61.8c3 3.6 4.1 8.1 4.1 12.8V384c0 35.3 28.7 64 64 64h56c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H248c-17.7 0-32-14.3-32-32V402.7c0-18.7 9.4-36.1 25.1-46.4l30.7-20.4c5.2-3.4 11.1-5.8 17.3-6.7L324.7 320H273c-9.7 0-17.3-8.5-15.9-18.1c3.8-26.9 41.5-88.6 108.9-161.2c2.3-2.5 6.2-2.5 8.5 0c1.9 2 3.7 4 5.6 6c-6.6 9.5-10.2 20.9-10.2 33.3c0 24.5 15.3 45.5 36.9 53.9c-.2 .9-.4 1.9-.4 2.9zM288 128c0-17.7-14.3-32-32-32s-32 14.3-32 32v32h64V128z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center right 5%;
+    background-size: 200px;
+    opacity: 0.25;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.logo h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo a::before {
+    content: "日本語";
+    font-size: 1em;
+    margin-right: 0.8rem;
+    background-color: var(--primary-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    transition: var(--transition);
+    position: relative;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav ul li:last-child a {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+/* Add samurai sword decoration */
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 20px;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='%239b1c31' opacity='0.1'%3E%3Cpath d='M431.5 176.4l-32-32c-8.6-8.6-22.6-8.6-31.2 0l-11.4 11.4c-6.8 6.8-8.9 17-5.5 25.9l-19.3 19.3L56.4 24.3c-4.5-4.5-10.6-7-17-7H24c-13.3 0-24 10.7-24 24v15.4c0 6.4 2.5 12.5 7 17l176.7 176.7-19.3 19.3c-8.9-3.4-19.1-1.2-25.9 5.5L127.2 287c-8.6 8.6-8.6 22.6 0 31.2l32 32c8.6 8.6 22.6 8.6 31.2 0l11.4-11.4c6.8-6.8 8.9-17 5.5-25.9l19.3-19.3 176.7 176.7c4.5 4.5 10.6 7 17 7h15.4c13.3 0 24-10.7 24-24v-15.4c0-6.4-2.5-12.5-7-17L275.9 244.9l19.3-19.3c8.9 3.4 19.1 1.2 25.9-5.5l11.4-11.4c8.6-8.6 8.6-22.6 0-31.2z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--box-shadow);
+    border-left: 5px solid var(--primary-color);
+    position: relative;
+}
+
+/* Add samurai clan mon (family crest) pattern to sections */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%239b1c31' opacity='0.05'%3E%3Cpath d='M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2;
+}
+
+.section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-family: 'Noto Serif JP', serif;
+    position: relative;
+    display: inline-block;
+    padding-right: 3rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+}
+
+.search-filter {
+    margin-bottom: 2rem;
+}
+
+#kanji-search {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--secondary-color);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    transition: var(--transition);
+}
+
+#kanji-search:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(155, 28, 49, 0.2);
+}
+
+.kanji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.kanji-card {
+    display: flex;
+    background-color: white;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.kanji-card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition);
+}
+
+.kanji-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.kanji-card:hover::before {
+    transform: scaleX(1);
+}
+
+.kanji-character {
+    font-size: 3rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: white;
+    min-width: 100px;
+    font-family: 'Noto Serif JP', serif;
+    /* Adding letter-spacing for better stroke visibility */
+    letter-spacing: 0.05em;
+    /* Adding text-rendering for better kanji rendering */
+    text-rendering: optimizeLegibility;
+    position: relative;
+}
+
+.kanji-details {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.kanji-details h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    border-bottom: 1px dashed var(--accent-color);
+    padding-bottom: 0.3rem;
+}
+
+.kanji-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Fix for the stroke count display */
+.kanji-details p strong {
+    color: var(--secondary-color);
+    display: inline-block;
+    min-width: 3.5rem;
+    flex-shrink: 0;
+}
+
+/* Added proper spacing for stroke display */
+.stroke-info {
+    margin: 0.6rem 0;
+    line-height: 1.8;
+}
+
+.stroke-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.5rem;
+}
+
+.stroke {
+    display: inline-block;
+    border: 1px solid rgba(155, 28, 49, 0.3);
+    padding: 3px 6px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-family: 'Noto Serif JP', serif;
+    background-color: rgba(155, 28, 49, 0.05);
+    border-radius: 3px;
+    position: relative;
+}
+
+.stroke:after {
+    content: "→";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+    font-size: 0.8rem;
+}
+
+.stroke:last-child:after {
+    display: none;
+}
+
+.example-words {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px dashed #ddd;
+}
+
+.example-word {
+    background-color: rgba(155, 28, 49, 0.05);
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    border-left: 2px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+.example-word:hover {
+    background-color: rgba(155, 28, 49, 0.1);
+    transform: translateX(5px);
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    border-top: 4px solid var(--primary-color);
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%231c1c1c' fill-opacity='1' d='M0,320L48,288C96,256,192,192,288,186.7C384,181,480,235,576,234.7C672,235,768,181,864,181.3C960,181,1056,235,1152,229.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8a1b36;
+}
+
+/* Animation for characters - like sword slashes */
+@keyframes swordSlash {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0.3;
+    }
+
+    70% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.kanji-character::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    opacity: 0;
+}
+
+.kanji-card:hover .kanji-character::after {
+    animation: swordSlash 0.8s ease-out;
+    opacity: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 0.2rem;
+    }
+
+    nav ul li:last-child a {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    .kanji-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+    }
+
+    .kanji-character {
+        font-size: 2.5rem;
+        min-width: 80px;
+        padding: 1rem;
+    }
+    
+    .stroke-container {
+        gap: 6px;
+    }
+    
+    .stroke {
+        padding: 2px 4px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section h2 {
+        font-size: 1.3rem;
+    }
+
+    .kanji-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kanji-character {
+        font-size: 2rem;
+        min-width: 70px;
+    }
+
+    .kanji-details h4 {
+        font-size: 1.1rem;
+    }
+
+    .kanji-details p,
+    .example-word {
+        font-size: 0.85rem;
+    }
+    
+    .stroke-container {
+        gap: 4px;
+    }
+    
+    .stroke {
+        padding: 2px 3px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+    }
+    
+    .stroke:after {
+        right: -8px;
+        font-size: 0.7rem;
+    }
+}

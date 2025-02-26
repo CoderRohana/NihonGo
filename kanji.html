@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><a href="index.html">NihonGo</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="grammar.html">Grammar</a></li>
+                    <li><a href="vocab.html">Vocab</a></li>
+                    <li><a href="kanji.html">Kanji</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Welcome to the Kanji Section</h2>
+            <p>I know, you know, we all know kanjis are tough right... But don't worry! On our site, we will learn only
+                the essential ~100 kanji characters needed for the JLPT N5 exam.</p>
+            <p>Each kanji card includes:</p>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                <li>The kanji character</li>
+                <li>Meaning in English</li>
+                <li>On'yomi (Chinese-derived) reading</li>
+                <li>Kun'yomi (Japanese-derived) reading</li>
+                <li>Common example words</li>
+                <li>Stroke count</li>
+            </ul>
+        </section>
+        <section>
+            <h2>JLPT N5 Kanji List</h2>
+
+            <div class="search-filter">
+                <input type="text" id="kanji-search" placeholder="Search kanji, meaning, or reading...">
+            </div>
+
+            <div class="kanji-grid">
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">一</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: One</h4>
+                        <p><strong>On:</strong> イチ (ichi)</p>
+                        <p><strong>Kun:</strong> ひと- (hito-)</p>
+                        <p><strong>Strokes:</strong> 1</p>
+                        <div class="example-words">
+                            <div class="example-word">一つ (hitotsu): one thing</div>
+                            <div class="example-word">一人 (hitori): one person</div>
+                            <div class="example-word">一日 (ichinichi): one day</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">二</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Two</h4>
+                        <p><strong>On:</strong> ニ (ni)</p>
+                        <p><strong>Kun:</strong> ふた- (futa-)</p>
+                        <p><strong>Strokes:</strong> 2</p>
+                        <div class="example-words">
+                            <div class="example-word">二つ (futatsu): two things</div>
+                            <div class="example-word">二人 (futari): two people</div>
+                            <div class="example-word">二月 (nigatsu): February</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">三</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Three</h4>
+                        <p><strong>On:</strong> サン (san)</p>
+                        <p><strong>Kun:</strong> み- (mi-)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">三つ (mittsu): three things</div>
+                            <div class="example-word">三人 (sannin): three people</div>
+                            <div class="example-word">三日 (mikka): three days/3rd day</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">四</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Four</h4>
+                        <p><strong>On:</strong> シ (shi), ヨン (yon)</p>
+                        <p><strong>Kun:</strong> よ- (yo-)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">四つ (yottsu): four things</div>
+                            <div class="example-word">四人 (yonin): four people</div>
+                            <div class="example-word">四月 (shigatsu): April</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">五</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Five</h4>
+                        <p><strong>On:</strong> ゴ (go)</p>
+                        <p><strong>Kun:</strong> いつ- (itsu-)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">五つ (itsutsu): five things</div>
+                            <div class="example-word">五人 (gonin): five people</div>
+                            <div class="example-word">五日 (itsuka): five days/5th day</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">六</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Six</h4>
+                        <p><strong>On:</strong> ロク (roku)</p>
+                        <p><strong>Kun:</strong> む- (mu-)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">六つ (muttsu): six things</div>
+                            <div class="example-word">六人 (rokunin): six people</div>
+                            <div class="example-word">六月 (rokugatsu): June</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">七</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Seven</h4>
+                        <p><strong>On:</strong> シチ (shichi)</p>
+                        <p><strong>Kun:</strong> なな- (nana-)</p>
+                        <p><strong>Strokes:</strong> 2</p>
+                        <div class="example-words">
+                            <div class="example-word">七つ (nanatsu): seven things</div>
+                            <div class="example-word">七人 (shichinin): seven people</div>
+                            <div class="example-word">七月 (shichigatsu): July</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">八</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Eight</h4>
+                        <p><strong>On:</strong> ハチ (hachi)</p>
+                        <p><strong>Kun:</strong> や- (ya-)</p>
+                        <p><strong>Strokes:</strong> 2</p>
+                        <div class="example-words">
+                            <div class="example-word">八つ (yattsu): eight things</div>
+                            <div class="example-word">八人 (hachinin): eight people</div>
+                            <div class="example-word">八月 (hachigatsu): August</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">九</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Nine</h4>
+                        <p><strong>On:</strong> キュウ (kyū), ク (ku)</p>
+                        <p><strong>Kun:</strong> ここの- (kokono-)</p>
+                        <p><strong>Strokes:</strong> 2</p>
+                        <div class="example-words">
+                            <div class="example-word">九つ (kokonotsu): nine things</div>
+                            <div class="example-word">九人 (kyūnin): nine people</div>
+                            <div class="example-word">九月 (kugatsu): September</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">十</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Ten</h4>
+                        <p><strong>On:</strong> ジュウ (jū)</p>
+                        <p><strong>Kun:</strong> とお (tō)</p>
+                        <p><strong>Strokes:</strong> 2</p>
+                        <div class="example-words">
+                            <div class="example-word">十日 (tōka): ten days/10th day</div>
+                            <div class="example-word">十人 (jūnin): ten people</div>
+                            <div class="example-word">十月 (jūgatsu): October</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">百</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Hundred</h4>
+                        <p><strong>On:</strong> ヒャク (hyaku)</p>
+                        <p><strong>Kun:</strong> もも (momo)</p>
+                        <p><strong>Strokes:</strong> 6</p>
+                        <div class="example-words">
+                            <div class="example-word">百円 (hyaku-en): 100 yen</div>
+                            <div class="example-word">百人 (hyakunin): 100 people</div>
+                            <div class="example-word">百万 (hyakuman): 1 million</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">千</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Thousand</h4>
+                        <p><strong>On:</strong> セン (sen)</p>
+                        <p><strong>Kun:</strong> ち (chi)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">千円 (sen-en): 1000 yen</div>
+                            <div class="example-word">千年 (sennen): 1000 years</div>
+                            <div class="example-word">千人 (sennin): 1000 people</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="numbers">
+                    <div class="kanji-character">万</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Ten thousand</h4>
+                        <p><strong>On:</strong> マン (man), バン (ban)</p>
+                        <p><strong>Kun:</strong> よろず (yorozu)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">一万 (ichiman): 10,000</div>
+                            <div class="example-word">万人 (bannin): all people</div>
+                            <div class="example-word">万年筆 (mannenhitsu): fountain pen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">日</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Day, Sun</h4>
+                        <p><strong>On:</strong> ニチ (nichi), ジツ (jitsu)</p>
+                        <p><strong>Kun:</strong> ひ (hi), -か (-ka)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">日曜日 (nichiyōbi): Sunday</div>
+                            <div class="example-word">今日 (kyō): today</div>
+                            <div class="example-word">毎日 (mainichi): every day</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">月</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Month, Moon</h4>
+                        <p><strong>On:</strong> ゲツ (getsu), ガツ (gatsu)</p>
+                        <p><strong>Kun:</strong> つき (tsuki)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">月曜日 (getsuyōbi): Monday</div>
+                            <div class="example-word">一月 (ichigatsu): January</div>
+                            <div class="example-word">今月 (kongetsu): this month</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">年</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Year</h4>
+                        <p><strong>On:</strong> ネン (nen)</p>
+                        <p><strong>Kun:</strong> とし (toshi)</p>
+                        <p><strong>Strokes:</strong> 6</p>
+                        <div class="example-words">
+                            <div class="example-word">今年 (kotoshi): this year</div>
+                            <div class="example-word">去年 (kyonen): last year</div>
+                            <div class="example-word">来年 (rainen): next year</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">時</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Time, Hour</h4>
+                        <p><strong>On:</strong> ジ (ji)</p>
+                        <p><strong>Kun:</strong> とき (toki)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">時間 (jikan): time, hours</div>
+                            <div class="example-word">三時 (sanji): 3 o'clock</div>
+                            <div class="example-word">時々 (tokidoki): sometimes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">分</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Minute, Part</h4>
+                        <p><strong>On:</strong> フン (fun), ブン (bun)</p>
+                        <p><strong>Kun:</strong> わ (wa)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">五分 (gofun): 5 minutes</div>
+                            <div class="example-word">自分 (jibun): oneself</div>
+                            <div class="example-word">分かる (wakaru): to understand</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">週</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Week</h4>
+                        <p><strong>On:</strong> シュウ (shū)</p>
+                        <p><strong>Kun:</strong> -</p>
+                        <p><strong>Strokes:</strong> 11</p>
+                        <div class="example-words">
+                            <div class="example-word">今週 (konshū): this week</div>
+                            <div class="example-word">先週 (senshū): last week</div>
+                            <div class="example-word">来週 (raishū): next week</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">朝</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Morning</h4>
+                        <p><strong>On:</strong> チョウ (chō)</p>
+                        <p><strong>Kun:</strong> あさ (asa)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">朝ご飯 (asagohan): breakfast</div>
+                            <div class="example-word">今朝 (kesa): this morning</div>
+                            <div class="example-word">毎朝 (maiasa): every morning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">昼</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Noon, Daytime</h4>
+                        <p><strong>On:</strong> チュウ (chū)</p>
+                        <p><strong>Kun:</strong> ひる (hiru)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">昼休み (hiruyasumi): lunch break</div>
+                            <div class="example-word">昼ご飯 (hirugohan): lunch</div>
+                            <div class="example-word">午昼 (gochū): midday</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="time">
+                    <div class="kanji-character">夜</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Night, Evening</h4>
+                        <p><strong>On:</strong> ヤ (ya)</p>
+                        <p><strong>Kun:</strong> よる (yoru), よ (yo)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">夜ご飯 (yorugohan): dinner</div>
+                            <div class="example-word">今夜 (konya): tonight</div>
+                            <div class="example-word">毎夜 (maiya): every night</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">人</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Person</h4>
+                        <p><strong>On:</strong> ジン (jin), ニン (nin)</p>
+                        <p><strong>Kun:</strong> ひと (hito)</p>
+                        <p><strong>Strokes:</strong> 2</p>
+                        <div class="example-words">
+                            <div class="example-word">日本人 (nihonjin): Japanese person</div>
+                            <div class="example-word">一人 (hitori): one person</div>
+                            <div class="example-word">友人 (yūjin): friend</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">男</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Man, Male</h4>
+                        <p><strong>On:</strong> ダン (dan), ナン (nan)</p>
+                        <p><strong>Kun:</strong> おとこ (otoko)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">男の子 (otokonoko): boy</div>
+                            <div class="example-word">男性 (dansei): male</div>
+                            <div class="example-word">長男 (chōnan): eldest son</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">女</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Woman, Female</h4>
+                        <p><strong>On:</strong> ジョ (jo), ニョ (nyo)</p>
+                        <p><strong>Kun:</strong> おんな (onna), め (me)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">女の子 (onnanoko): girl</div>
+                            <div class="example-word">女性 (josei): female</div>
+                            <div class="example-word">少女 (shōjo): young girl</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">子</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Child</h4>
+                        <p><strong>On:</strong> シ (shi), ス (su)</p>
+                        <p><strong>Kun:</strong> こ (ko)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">子供 (kodomo): child</div>
+                            <div class="example-word">女子 (joshi): girl</div>
+                            <div class="example-word">子ども (kodomo): children</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">父</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Father</h4>
+                        <p><strong>On:</strong> フ (fu)</p>
+                        <p><strong>Kun:</strong> ちち (chichi), とう (tō)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">お父さん (otōsan): father</div>
+                            <div class="example-word">父親 (chichioya): father</div>
+                            <div class="example-word">父母 (fubo): parents</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">母</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Mother</h4>
+                        <p><strong>On:</strong> ボ (bo)</p>
+                        <p><strong>Kun:</strong> はは (haha), かあ (kaa)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">お母さん (okāsan): mother</div>
+                            <div class="example-word">母親 (hahaoya): mother</div>
+                            <div class="example-word">母国 (bokoku): motherland</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">友</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Friend</h4>
+                        <p><strong>On:</strong> ユウ (yū)</p>
+                        <p><strong>Kun:</strong> とも (tomo)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">友達 (tomodachi): friend</div>
+                            <div class="example-word">友人 (yūjin): friend</div>
+                            <div class="example-word">親友 (shin'yū): close friend</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">兄</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Older Brother</h4>
+                        <p><strong>On:</strong> ケイ (kei)</p>
+                        <p><strong>Kun:</strong> あに (ani)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">お兄さん (onīsan): older brother</div>
+                            <div class="example-word">兄弟 (kyōdai): siblings</div>
+                            <div class="example-word">兄貴 (aniki): big brother</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">弟</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Younger Brother</h4>
+                        <p><strong>On:</strong> テイ (tei), ダイ (dai)</p>
+                        <p><strong>Kun:</strong> おとうと (otōto)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">弟さん (otōtosan): younger brother</div>
+                            <div class="example-word">兄弟 (kyōdai): siblings</div>
+                            <div class="example-word">実弟 (jittei): biological younger brother</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">姉</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Older Sister</h4>
+                        <p><strong>On:</strong> シ (shi)</p>
+                        <p><strong>Kun:</strong> あね (ane)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">お姉さん (onēsan): older sister</div>
+                            <div class="example-word">姉妹 (shimai): sisters</div>
+                            <div class="example-word">姉上 (aneue): honorable older sister</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="people">
+                    <div class="kanji-character">妹</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Younger Sister</h4>
+                        <p><strong>On:</strong> マイ (mai)</p>
+                        <p><strong>Kun:</strong> いもうと (imōto)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">妹さん (imōtosan): younger sister</div>
+                            <div class="example-word">姉妹 (shimai): sisters</div>
+                            <div class="example-word">義妹 (gimai): sister-in-law</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">行</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Go</h4>
+                        <p><strong>On:</strong> コウ (kō), ギョウ (gyō), アン (an)</p>
+                        <p><strong>Kun:</strong> いく (iku), ゆく (yuku)</p>
+                        <p><strong>Strokes:</strong> 6</p>
+                        <div class="example-words">
+                            <div class="example-word">行く (iku): to go</div>
+                            <div class="example-word">旅行 (ryokō): travel</div>
+                            <div class="example-word">銀行 (ginkō): bank</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">見</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: See</h4>
+                        <p><strong>On:</strong> ケン (ken)</p>
+                        <p><strong>Kun:</strong> みる (miru), みえる (mieru)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">見る (miru): to see</div>
+                            <div class="example-word">見方 (mikata): viewpoint</div>
+                            <div class="example-word">意見 (iken): opinion</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">聞</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Hear, Ask</h4>
+                        <p><strong>On:</strong> ブン (bun), モン (mon)</p>
+                        <p><strong>Kun:</strong> きく (kiku)</p>
+                        <p><strong>Strokes:</strong> 14</p>
+                        <div class="example-words">
+                            <div class="example-word">聞く (kiku): to hear, to listen</div>
+                            <div class="example-word">新聞 (shinbun): newspaper</div>
+                            <div class="example-word">聞き手 (kikite): listener</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">食</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Eat, Food</h4>
+                        <p><strong>On:</strong> ショク (shoku), ジキ (jiki)</p>
+                        <p><strong>Kun:</strong> たべる (taberu), くう (kuu)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">食べる (taberu): to eat</div>
+                            <div class="example-word">食事 (shokuji): meal</div>
+                            <div class="example-word">外食 (gaishoku): eating out</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">飲</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Drink</h4>
+                        <p><strong>On:</strong> イン (in)</p>
+                        <p><strong>Kun:</strong> のむ (nomu)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">飲む (nomu): to drink</div>
+                            <div class="example-word">飲料 (inryō): beverage</div>
+                            <div class="example-word">飲食 (inshoku): food and drink</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">読</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Read</h4>
+                        <p><strong>On:</strong> ドク (doku), トク (toku)</p>
+                        <p><strong>Kun:</strong> よむ (yomu)</p>
+                        <p><strong>Strokes:</strong> 14</p>
+                        <div class="example-words">
+                            <div class="example-word">読む (yomu): to read</div>
+                            <div class="example-word">読書 (dokusho): reading books</div>
+                            <div class="example-word">読者 (dokusha): reader</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">書</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Write</h4>
+                        <p><strong>On:</strong> ショ (sho)</p>
+                        <p><strong>Kun:</strong> かく (kaku)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">書く (kaku): to write</div>
+                            <div class="example-word">辞書 (jisho): dictionary</div>
+                            <div class="example-word">図書館 (toshokan): library</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">話</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Talk, Story</h4>
+                        <p><strong>On:</strong> ワ (wa)</p>
+                        <p><strong>Kun:</strong> はなす (hanasu), はなし (hanashi)</p>
+                        <p><strong>Strokes:</strong> 13</p>
+                        <div class="example-words">
+                            <div class="example-word">話す (hanasu): to speak</div>
+                            <div class="example-word">会話 (kaiwa): conversation</div>
+                            <div class="example-word">電話 (denwa): telephone</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">買</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Buy</h4>
+                        <p><strong>On:</strong> バイ (bai)</p>
+                        <p><strong>Kun:</strong> かう (kau)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">買う (kau): to buy</div>
+                            <div class="example-word">買い物 (kaimono): shopping</div>
+                            <div class="example-word">売買 (baibai): buying and selling</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="actions">
+                    <div class="kanji-character">売</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Sell</h4>
+                        <p><strong>On:</strong> バイ (bai)</p>
+                        <p><strong>Kun:</strong> うる (uru), うれる (ureru)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">売る (uru): to sell</div>
+                            <div class="example-word">販売 (hanbai): sales</div>
+                            <div class="example-word">売店 (baiten): shop</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">山</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Mountain</h4>
+                        <p><strong>On:</strong> サン (san)</p>
+                        <p><strong>Kun:</strong> やま (yama)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">富士山 (Fujisan): Mt. Fuji</div>
+                            <div class="example-word">山登り (yamanobori): mountain climbing</div>
+                            <div class="example-word">火山 (kazan): volcano</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">川</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: River</h4>
+                        <p><strong>On:</strong> セン (sen)</p>
+                        <p><strong>Kun:</strong> かわ (kawa)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">川岸 (kawagishi): riverbank</div>
+                            <div class="example-word">河川 (kasen): rivers</div>
+                            <div class="example-word">小川 (ogawa): stream</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">木</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Tree, Wood</h4>
+                        <p><strong>On:</strong> モク (moku), ボク (boku)</p>
+                        <p><strong>Kun:</strong> き (ki)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">木材 (mokuzai): timber</div>
+                            <div class="example-word">木造 (mokuzo): wooden structure</div>
+                            <div class="example-word">樹木 (jumoku): trees</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">水</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Water</h4>
+                        <p><strong>On:</strong> スイ (sui)</p>
+                        <p><strong>Kun:</strong> みず (mizu)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">水分 (suibun): moisture</div>
+                            <div class="example-word">水道 (suidō): water supply</div>
+                            <div class="example-word">洪水 (kōzui): flood</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">火</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Fire</h4>
+                        <p><strong>On:</strong> カ (ka)</p>
+                        <p><strong>Kun:</strong> ひ (hi)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">火事 (kaji): fire, conflagration</div>
+                            <div class="example-word">火山 (kazan): volcano</div>
+                            <div class="example-word">火曜日 (kayōbi): Tuesday</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">土</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Earth, Soil</h4>
+                        <p><strong>On:</strong> ド (do), ト (to)</p>
+                        <p><strong>Kun:</strong> つち (tsuchi)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">土地 (tochi): land</div>
+                            <div class="example-word">土曜日 (doyōbi): Saturday</div>
+                            <div class="example-word">国土 (kokudo): territory</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">天</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Heaven, Sky</h4>
+                        <p><strong>On:</strong> テン (ten)</p>
+                        <p><strong>Kun:</strong> あめ (ame), あま (ama)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">天気 (tenki): weather</div>
+                            <div class="example-word">天国 (tengoku): heaven</div>
+                            <div class="example-word">天然 (tennen): natural</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">空</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Sky, Empty</h4>
+                        <p><strong>On:</strong> クウ (kū)</p>
+                        <p><strong>Kun:</strong> そら (sora), あ.く (a.ku), から (kara)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">空港 (kūkō): airport</div>
+                            <div class="example-word">航空 (kōkū): aviation</div>
+                            <div class="example-word">空手 (karate): karate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">海</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Sea, Ocean</h4>
+                        <p><strong>On:</strong> カイ (kai)</p>
+                        <p><strong>Kun:</strong> うみ (umi)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">海岸 (kaigan): seashore</div>
+                            <div class="example-word">海外 (kaigai): overseas</div>
+                            <div class="example-word">日本海 (Nihonkai): Sea of Japan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="nature">
+                    <div class="kanji-character">雨</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Rain</h4>
+                        <p><strong>On:</strong> ウ (u)</p>
+                        <p><strong>Kun:</strong> あめ (ame), あま (ama)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">雨季 (uki): rainy season</div>
+                            <div class="example-word">梅雨 (tsuyu): rainy season</div>
+                            <div class="example-word">大雨 (ōame): heavy rain</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">国</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Country, Nation</h4>
+                        <p><strong>On:</strong> コク (koku)</p>
+                        <p><strong>Kun:</strong> くに (kuni)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">外国 (gaikoku): foreign country</div>
+                            <div class="example-word">中国 (Chūgoku): China</div>
+                            <div class="example-word">国民 (kokumin): citizen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">町</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Town</h4>
+                        <p><strong>On:</strong> チョウ (chō)</p>
+                        <p><strong>Kun:</strong> まち (machi)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">町内 (chōnai): neighborhood</div>
+                            <div class="example-word">下町 (shitamachi): downtown</div>
+                            <div class="example-word">町長 (chōchō): mayor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">市</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: City, Market</h4>
+                        <p><strong>On:</strong> シ (shi)</p>
+                        <p><strong>Kun:</strong> いち (ichi)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">都市 (toshi): city</div>
+                            <div class="example-word">市場 (ichiba): marketplace</div>
+                            <div class="example-word">市民 (shimin): citizen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">家</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: House, Home</h4>
+                        <p><strong>On:</strong> カ (ka), ケ (ke)</p>
+                        <p><strong>Kun:</strong> いえ (ie), や (ya)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">家族 (kazoku): family</div>
+                            <div class="example-word">我が家 (wagaya): my home</div>
+                            <div class="example-word">作家 (sakka): writer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">学</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Study, Learning, School</h4>
+                        <p><strong>On:</strong> ガク (gaku)</p>
+                        <p><strong>Kun:</strong> まなぶ (manabu)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">大学 (daigaku): university</div>
+                            <div class="example-word">学校 (gakkō): school</div>
+                            <div class="example-word">学生 (gakusei): student</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">校</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: School</h4>
+                        <p><strong>On:</strong> コウ (kō)</p>
+                        <p><strong>Kun:</strong> None commonly used</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">学校 (gakkō): school</div>
+                            <div class="example-word">校長 (kōchō): principal</div>
+                            <div class="example-word">高校 (kōkō): high school</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">店</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Store, Shop</h4>
+                        <p><strong>On:</strong> テン (ten)</p>
+                        <p><strong>Kun:</strong> みせ (mise)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">書店 (shoten): bookstore</div>
+                            <div class="example-word">店員 (ten'in): shop employee</div>
+                            <div class="example-word">喫茶店 (kissaten): café</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">駅</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Station</h4>
+                        <p><strong>On:</strong> エキ (eki)</p>
+                        <p><strong>Kun:</strong> None commonly used</p>
+                        <p><strong>Strokes:</strong> 14</p>
+                        <div class="example-words">
+                            <div class="example-word">駅前 (ekimae): in front of the station</div>
+                            <div class="example-word">駅長 (ekichō): stationmaster</div>
+                            <div class="example-word">東京駅 (Tōkyō-eki): Tokyo Station</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">病</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Illness, Hospital</h4>
+                        <p><strong>On:</strong> ビョウ (byō)</p>
+                        <p><strong>Kun:</strong> やむ (yamu), やまい (yamai)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">病院 (byōin): hospital</div>
+                            <div class="example-word">病気 (byōki): illness</div>
+                            <div class="example-word">入院 (nyūin): hospitalization</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="places">
+                    <div class="kanji-character">社</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Company, Shrine</h4>
+                        <p><strong>On:</strong> シャ (sha)</p>
+                        <p><strong>Kun:</strong> やしろ (yashiro)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">会社 (kaisha): company</div>
+                            <div class="example-word">神社 (jinja): shrine</div>
+                            <div class="example-word">社長 (shachō): company president</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">本</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Book, Origin</h4>
+                        <p><strong>On:</strong> ホン (hon)</p>
+                        <p><strong>Kun:</strong> もと (moto)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">日本 (Nihon): Japan</div>
+                            <div class="example-word">本屋 (hon'ya): bookstore</div>
+                            <div class="example-word">本当 (hontō): truth, reality</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">車</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Car, Vehicle</h4>
+                        <p><strong>On:</strong> シャ (sha)</p>
+                        <p><strong>Kun:</strong> くるま (kuruma)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">自動車 (jidōsha): automobile</div>
+                            <div class="example-word">電車 (densha): train</div>
+                            <div class="example-word">車両 (sharyō): vehicle</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">電</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Electricity</h4>
+                        <p><strong>On:</strong> デン (den)</p>
+                        <p><strong>Kun:</strong> None commonly used</p>
+                        <p><strong>Strokes:</strong> 13</p>
+                        <div class="example-words">
+                            <div class="example-word">電話 (denwa): telephone</div>
+                            <div class="example-word">電車 (densha): electric train</div>
+                            <div class="example-word">電気 (denki): electricity</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">紙</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Paper</h4>
+                        <p><strong>On:</strong> シ (shi)</p>
+                        <p><strong>Kun:</strong> かみ (kami)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">手紙 (tegami): letter</div>
+                            <div class="example-word">新聞紙 (shinbunshi): newspaper</div>
+                            <div class="example-word">紙幣 (shihei): paper money</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">花</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Flower</h4>
+                        <p><strong>On:</strong> カ (ka)</p>
+                        <p><strong>Kun:</strong> はな (hana)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">花見 (hanami): flower viewing</div>
+                            <div class="example-word">花瓶 (kabin): vase</div>
+                            <div class="example-word">花火 (hanabi): fireworks</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">靴</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Shoe</h4>
+                        <p><strong>On:</strong> カ (ka)</p>
+                        <p><strong>Kun:</strong> くつ (kutsu)</p>
+                        <p><strong>Strokes:</strong> 13</p>
+                        <div class="example-words">
+                            <div class="example-word">靴下 (kutsushita): socks</div>
+                            <div class="example-word">長靴 (nagagutsu): boots</div>
+                            <div class="example-word">運動靴 (undōgutsu): sneakers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">服</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Clothes</h4>
+                        <p><strong>On:</strong> フク (fuku)</p>
+                        <p><strong>Kun:</strong> None commonly used</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">洋服 (yōfuku): Western clothes</div>
+                            <div class="example-word">服装 (fukusō): attire</div>
+                            <div class="example-word">制服 (seifuku): uniform</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">帽</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Hat</h4>
+                        <p><strong>On:</strong> ボウ (bō)</p>
+                        <p><strong>Kun:</strong> None commonly used</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">帽子 (bōshi): hat</div>
+                            <div class="example-word">麦わら帽子 (mugiwarabōshi): straw hat</div>
+                            <div class="example-word">冬帽 (fuyubō): winter hat</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">鏡</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Mirror</h4>
+                        <p><strong>On:</strong> キョウ (kyō)</p>
+                        <p><strong>Kun:</strong> かがみ (kagami)</p>
+                        <p><strong>Strokes:</strong> 19</p>
+                        <div class="example-words">
+                            <div class="example-word">鏡台 (kyōdai): dressing table</div>
+                            <div class="example-word">手鏡 (tegami): hand mirror</div>
+                            <div class="example-word">眼鏡 (megane): glasses</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="objects">
+                    <div class="kanji-character">傘</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Umbrella</h4>
+                        <p><strong>On:</strong> サン (san)</p>
+                        <p><strong>Kun:</strong> かさ (kasa)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">日傘 (higasa): parasol</div>
+                            <div class="example-word">雨傘 (amagasa): rain umbrella</div>
+                            <div class="example-word">傘立て (kasatate): umbrella stand</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">大</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Big, Large</h4>
+                        <p><strong>On:</strong> ダイ (dai), タイ (tai)</p>
+                        <p><strong>Kun:</strong> おおきい (ookii)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">大きい (ōkii): big</div>
+                            <div class="example-word">大学 (daigaku): university</div>
+                            <div class="example-word">大人 (otona): adult</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">小</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Small</h4>
+                        <p><strong>On:</strong> ショウ (shō)</p>
+                        <p><strong>Kun:</strong> ちいさい (chiisai)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">小さい (chiisai): small</div>
+                            <div class="example-word">小学校 (shōgakkō): elementary school</div>
+                            <div class="example-word">小説 (shōsetsu): novel</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">多</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Many</h4>
+                        <p><strong>On:</strong> タ (ta)</p>
+                        <p><strong>Kun:</strong> おおい (ooi)</p>
+                        <p><strong>Strokes:</strong> 6</p>
+                        <div class="example-words">
+                            <div class="example-word">多い (ōi): many, numerous</div>
+                            <div class="example-word">多数 (tasū): majority</div>
+                            <div class="example-word">多く (ōku): many, much</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">少</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Few</h4>
+                        <p><strong>On:</strong> ショウ (shō)</p>
+                        <p><strong>Kun:</strong> すくない (sukunai)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">少ない (sukunai): few, scarce</div>
+                            <div class="example-word">少年 (shōnen): boy</div>
+                            <div class="example-word">少し (sukoshi): a little</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">新</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: New</h4>
+                        <p><strong>On:</strong> シン (shin)</p>
+                        <p><strong>Kun:</strong> あたらしい (atarashii), あらた (arata)</p>
+                        <p><strong>Strokes:</strong> 13</p>
+                        <div class="example-words">
+                            <div class="example-word">新しい (atarashii): new</div>
+                            <div class="example-word">新聞 (shinbun): newspaper</div>
+                            <div class="example-word">新年 (shinnen): new year</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">古</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Old</h4>
+                        <p><strong>On:</strong> コ (ko)</p>
+                        <p><strong>Kun:</strong> ふるい (furui)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">古い (furui): old</div>
+                            <div class="example-word">古代 (kodai): ancient times</div>
+                            <div class="example-word">古書 (kosho): old book</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">高</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: High, Tall</h4>
+                        <p><strong>On:</strong> コウ (kō)</p>
+                        <p><strong>Kun:</strong> たかい (takai)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">高い (takai): high, expensive</div>
+                            <div class="example-word">高校 (kōkō): high school</div>
+                            <div class="example-word">高速 (kōsoku): high speed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">低</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Low</h4>
+                        <p><strong>On:</strong> テイ (tei)</p>
+                        <p><strong>Kun:</strong> ひくい (hikui)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">低い (hikui): low</div>
+                            <div class="example-word">低下 (teika): decline</div>
+                            <div class="example-word">低温 (teion): low temperature</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">長</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Long, Leader</h4>
+                        <p><strong>On:</strong> チョウ (chō)</p>
+                        <p><strong>Kun:</strong> ながい (nagai)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">長い (nagai): long</div>
+                            <div class="example-word">校長 (kōchō): principal</div>
+                            <div class="example-word">社長 (shachō): company president</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="qualities">
+                    <div class="kanji-character">短</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Short</h4>
+                        <p><strong>On:</strong> タン (tan)</p>
+                        <p><strong>Kun:</strong> みじかい (mijikai)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">短い (mijikai): short</div>
+                            <div class="example-word">短所 (tansho): shortcoming</div>
+                            <div class="example-word">短期 (tanki): short term</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="emotions">
+                    <div class="kanji-character">愛</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Love</h4>
+                        <p><strong>On:</strong> アイ (ai)</p>
+                        <p><strong>Kun:</strong> None commonly used</p>
+                        <p><strong>Strokes:</strong> 13</p>
+                        <div class="example-words">
+                            <div class="example-word">愛情 (aijō): affection</div>
+                            <div class="example-word">恋愛 (ren'ai): romantic love</div>
+                            <div class="example-word">愛する (ai suru): to love</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="emotions">
+                    <div class="kanji-character">怒</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Anger</h4>
+                        <p><strong>On:</strong> ド (do)</p>
+                        <p><strong>Kun:</strong> おこる (okoru), いかる (ikaru)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">怒る (okoru): to get angry</div>
+                            <div class="example-word">怒り (ikari): anger</div>
+                            <div class="example-word">激怒 (gekido): rage</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="emotions">
+                    <div class="kanji-character">楽</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Enjoyment, Music, Comfort</h4>
+                        <p><strong>On:</strong> ガク (gaku), ラク (raku)</p>
+                        <p><strong>Kun:</strong> たのしい (tanoshii)</p>
+                        <p><strong>Strokes:</strong> 13</p>
+                        <div class="example-words">
+                            <div class="example-word">楽しい (tanoshii): fun, enjoyable</div>
+                            <div class="example-word">音楽 (ongaku): music</div>
+                            <div class="example-word">楽器 (gakki): musical instrument</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="emotions">
+                    <div class="kanji-character">悲</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Sadness</h4>
+                        <p><strong>On:</strong> ヒ (hi)</p>
+                        <p><strong>Kun:</strong> かなしい (kanashii)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">悲しい (kanashii): sad</div>
+                            <div class="example-word">悲劇 (higeki): tragedy</div>
+                            <div class="example-word">悲観 (hikan): pessimism</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="emotions">
+                    <div class="kanji-character">苦</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Suffering, Bitter</h4>
+                        <p><strong>On:</strong> ク (ku)</p>
+                        <p><strong>Kun:</strong> くるしい (kurushii), にがい (nigai)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">苦しい (kurushii): painful</div>
+                            <div class="example-word">苦手 (nigate): weakness</div>
+                            <div class="example-word">苦労 (kurō): hardship</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="emotions">
+                    <div class="kanji-character">笑</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Laugh</h4>
+                        <p><strong>On:</strong> ショウ (shō)</p>
+                        <p><strong>Kun:</strong> わらう (warau), えむ (emu)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">笑う (warau): to laugh</div>
+                            <div class="example-word">笑顔 (egao): smile</div>
+                            <div class="example-word">微笑む (hohoemu): to smile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="body-parts">
+                    <div class="kanji-character">口</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Mouth</h4>
+                        <p><strong>On:</strong> コウ、ク (kō, ku)</p>
+                        <p><strong>Kun:</strong> くち (kuchi)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">口 (kuchi): mouth</div>
+                            <div class="example-word">入口 (iriguchi): entrance</div>
+                            <div class="example-word">出口 (deguchi): exit</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="body-parts">
+                    <div class="kanji-character">目</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Eye</h4>
+                        <p><strong>On:</strong> モク (moku)</p>
+                        <p><strong>Kun:</strong> め (me)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">目 (me): eye</div>
+                            <div class="example-word">目的 (mokuteki): purpose, goal</div>
+                            <div class="example-word">一目 (hitome): glance</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="body-parts">
+                    <div class="kanji-character">耳</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Ear</h4>
+                        <p><strong>On:</strong> ジ (ji)</p>
+                        <p><strong>Kun:</strong> みみ (mimi)</p>
+                        <p><strong>Strokes:</strong> 6</p>
+                        <div class="example-words">
+                            <div class="example-word">耳 (mimi): ear</div>
+                            <div class="example-word">耳元 (mimimoto): ear, earlobe</div>
+                            <div class="example-word">片耳 (katamimi): one ear</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="body-parts">
+                    <div class="kanji-character">手</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Hand</h4>
+                        <p><strong>On:</strong> シュ (shu)</p>
+                        <p><strong>Kun:</strong> て (te)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">手 (te): hand</div>
+                            <div class="example-word">上手 (jōzu): skilled</div>
+                            <div class="example-word">下手 (heta): unskilled</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="body-parts">
+                    <div class="kanji-character">足</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Foot, Leg</h4>
+                        <p><strong>On:</strong> ソク (soku)</p>
+                        <p><strong>Kun:</strong> あし (ashi)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">足 (ashi): foot, leg</div>
+                            <div class="example-word">足りる (tariru): to be sufficient</div>
+                            <div class="example-word">足す (tasu): to add</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanji-card" data-category="education">
+                    <div class="kanji-character">学</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Study, Learning</h4>
+                        <p><strong>On:</strong> ガク (gaku)</p>
+                        <p><strong>Kun:</strong> まなぶ (manabu)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">学校 (gakkō): school</div>
+                            <div class="example-word">学生 (gakusei): student</div>
+                            <div class="example-word">大学 (daigaku): university</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="education">
+                    <div class="kanji-character">校</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: School</h4>
+                        <p><strong>On:</strong> コウ (kō)</p>
+                        <p><strong>Kun:</strong> (none common)</p>
+                        <p><strong>Strokes:</strong> 10</p>
+                        <div class="example-words">
+                            <div class="example-word">学校 (gakkō): school</div>
+                            <div class="example-word">校長 (kōchō): principal</div>
+                            <div class="example-word">高校 (kōkō): high school</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="education">
+                    <div class="kanji-character">先</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Before, Previous, First</h4>
+                        <p><strong>On:</strong> セン (sen)</p>
+                        <p><strong>Kun:</strong> さき (saki)</p>
+                        <p><strong>Strokes:</strong> 6</p>
+                        <div class="example-words">
+                            <div class="example-word">先生 (sensei): teacher</div>
+                            <div class="example-word">先週 (senshū): last week</div>
+                            <div class="example-word">先に (saki ni): before, ahead</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="education">
+                    <div class="kanji-character">生</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Life, Birth</h4>
+                        <p><strong>On:</strong> セイ、ショウ (sei, shō)</p>
+                        <p><strong>Kun:</strong> いきる (ikiru), うまれる (umareru)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">生きる (ikiru): to live</div>
+                            <div class="example-word">学生 (gakusei): student</div>
+                            <div class="example-word">先生 (sensei): teacher</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="education">
+                    <div class="kanji-character">文</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Text, Writing, Literature</h4>
+                        <p><strong>On:</strong> ブン、モン (bun, mon)</p>
+                        <p><strong>Kun:</strong> ふみ (fumi)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">文字 (moji): character, letter</div>
+                            <div class="example-word">文化 (bunka): culture</div>
+                            <div class="example-word">作文 (sakubun): composition, essay</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="directions">
+                    <div class="kanji-character">上</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Up, Above</h4>
+                        <p><strong>On:</strong> ジョウ (jō)</p>
+                        <p><strong>Kun:</strong> うえ (ue), あげる (ageru), のぼる (noboru)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">上 (ue): above, up</div>
+                            <div class="example-word">上げる (ageru): to raise</div>
+                            <div class="example-word">上手 (jōzu): skilled</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="directions">
+                    <div class="kanji-character">下</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Down, Below</h4>
+                        <p><strong>On:</strong> カ、ゲ (ka, ge)</p>
+                        <p><strong>Kun:</strong> した (shita), さげる (sageru), くだる (kudaru)</p>
+                        <p><strong>Strokes:</strong> 3</p>
+                        <div class="example-words">
+                            <div class="example-word">下 (shita): below, down</div>
+                            <div class="example-word">下げる (sageru): to lower</div>
+                            <div class="example-word">下手 (heta): unskilled</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="directions">
+                    <div class="kanji-character">左</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Left</h4>
+                        <p><strong>On:</strong> サ (sa)</p>
+                        <p><strong>Kun:</strong> ひだり (hidari)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">左 (hidari): left</div>
+                            <div class="example-word">左側 (hidarigawa): left side</div>
+                            <div class="example-word">左手 (hidarite): left hand</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="directions">
+                    <div class="kanji-character">右</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Right</h4>
+                        <p><strong>On:</strong> ウ、ユウ (u, yū)</p>
+                        <p><strong>Kun:</strong> みぎ (migi)</p>
+                        <p><strong>Strokes:</strong> 5</p>
+                        <div class="example-words">
+                            <div class="example-word">右 (migi): right</div>
+                            <div class="example-word">右側 (migigawa): right side</div>
+                            <div class="example-word">右手 (migite): right hand</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="directions">
+                    <div class="kanji-character">中</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Middle, Inside</h4>
+                        <p><strong>On:</strong> チュウ (chū)</p>
+                        <p><strong>Kun:</strong> なか (naka)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">中 (naka): inside, middle</div>
+                            <div class="example-word">中国 (chūgoku): China</div>
+                            <div class="example-word">一日中 (ichinichijū): all day long</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="directions">
+                    <div class="kanji-character">前</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Before, Front</h4>
+                        <p><strong>On:</strong> ゼン (zen)</p>
+                        <p><strong>Kun:</strong> まえ (mae)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">前 (mae): front, before</div>
+                            <div class="example-word">名前 (namae): name</div>
+                            <div class="example-word">前に (mae ni): before, in front</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="directions">
+                    <div class="kanji-character">後</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: After, Behind</h4>
+                        <p><strong>On:</strong> ゴ、コウ (go, kō)</p>
+                        <p><strong>Kun:</strong> あと (ato), うしろ (ushiro)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">後 (ato): after, later</div>
+                            <div class="example-word">後ろ (ushiro): behind, back</div>
+                            <div class="example-word">午後 (gogo): afternoon</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="food">
+                    <div class="kanji-character">食</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Eat, Food</h4>
+                        <p><strong>On:</strong> ショク、ジキ (shoku, jiki)</p>
+                        <p><strong>Kun:</strong> たべる (taberu), くう (kuu)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">食べる (taberu): to eat</div>
+                            <div class="example-word">食事 (shokuji): meal</div>
+                            <div class="example-word">食堂 (shokudō): cafeteria</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="food">
+                    <div class="kanji-character">飲</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Drink</h4>
+                        <p><strong>On:</strong> イン (in)</p>
+                        <p><strong>Kun:</strong> のむ (nomu)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">飲む (nomu): to drink</div>
+                            <div class="example-word">飲み物 (nomimono): beverage</div>
+                            <div class="example-word">飲食 (inshoku): food and drink</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="food">
+                    <div class="kanji-character">米</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Rice, America</h4>
+                        <p><strong>On:</strong> ベイ、マイ (bei, mai)</p>
+                        <p><strong>Kun:</strong> こめ (kome)</p>
+                        <p><strong>Strokes:</strong> 6</p>
+                        <div class="example-words">
+                            <div class="example-word">お米 (okome): rice</div>
+                            <div class="example-word">米国 (beikoku): America</div>
+                            <div class="example-word">日米 (nichibei): Japan-America</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="food">
+                    <div class="kanji-character">茶</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Tea</h4>
+                        <p><strong>On:</strong> チャ、サ (cha, sa)</p>
+                        <p><strong>Kun:</strong> (none common)</p>
+                        <p><strong>Strokes:</strong> 9</p>
+                        <div class="example-words">
+                            <div class="example-word">お茶 (ocha): tea</div>
+                            <div class="example-word">紅茶 (kōcha): black tea</div>
+                            <div class="example-word">茶色 (chairo): brown</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="transportation">
+                    <div class="kanji-character">車</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Car, Vehicle</h4>
+                        <p><strong>On:</strong> シャ (sha)</p>
+                        <p><strong>Kun:</strong> くるま (kuruma)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">車 (kuruma): car</div>
+                            <div class="example-word">電車 (densha): train</div>
+                            <div class="example-word">自転車 (jitensha): bicycle</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="transportation">
+                    <div class="kanji-character">駅</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Station</h4>
+                        <p><strong>On:</strong> エキ (eki)</p>
+                        <p><strong>Kun:</strong> (none common)</p>
+                        <p><strong>Strokes:</strong> 14</p>
+                        <div class="example-words">
+                            <div class="example-word">駅 (eki): station</div>
+                            <div class="example-word">駅前 (ekimae): in front of the station</div>
+                            <div class="example-word">駅長 (ekichō): station master</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="transportation">
+                    <div class="kanji-character">道</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Road, Way</h4>
+                        <p><strong>On:</strong> ドウ (dō)</p>
+                        <p><strong>Kun:</strong> みち (michi)</p>
+                        <p><strong>Strokes:</strong> 12</p>
+                        <div class="example-words">
+                            <div class="example-word">道 (michi): road, way</div>
+                            <div class="example-word">道路 (dōro): road</div>
+                            <div class="example-word">北海道 (hokkaidō): Hokkaido</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="measurement">
+                    <div class="kanji-character">円</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Circle, Yen</h4>
+                        <p><strong>On:</strong> エン (en)</p>
+                        <p><strong>Kun:</strong> まるい (marui)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">円 (en): yen</div>
+                            <div class="example-word">円い (marui): round</div>
+                            <div class="example-word">五百円 (gohyaku-en): 500 yen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="measurement">
+                    <div class="kanji-character">分</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Minute, Part</h4>
+                        <p><strong>On:</strong> ブン、フン (bun, fun)</p>
+                        <p><strong>Kun:</strong> わける (wakeru)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">分 (fun): minute</div>
+                            <div class="example-word">自分 (jibun): oneself</div>
+                            <div class="example-word">半分 (hanbun): half</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="miscellaneous">
+                    <div class="kanji-character">何</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: What</h4>
+                        <p><strong>On:</strong> カ (ka)</p>
+                        <p><strong>Kun:</strong> なに、なん (nani, nan)</p>
+                        <p><strong>Strokes:</strong> 7</p>
+                        <div class="example-words">
+                            <div class="example-word">何 (nani): what</div>
+                            <div class="example-word">何か (nanika): something</div>
+                            <div class="example-word">何時 (nanji): what time</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="miscellaneous">
+                    <div class="kanji-character">方</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Direction, Way</h4>
+                        <p><strong>On:</strong> ホウ (hō)</p>
+                        <p><strong>Kun:</strong> かた (kata)</p>
+                        <p><strong>Strokes:</strong> 4</p>
+                        <div class="example-words">
+                            <div class="example-word">方法 (hōhō): method</div>
+                            <div class="example-word">地方 (chihō): region</div>
+                            <div class="example-word">四方 (shihō): all directions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="miscellaneous">
+                    <div class="kanji-character">力</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Power, Strength</h4>
+                        <p><strong>On:</strong> リョク、リキ (ryoku, riki)</p>
+                        <p><strong>Kun:</strong> ちから (chikara)</p>
+                        <p><strong>Strokes:</strong> 2</p>
+                        <div class="example-words">
+                            <div class="example-word">力 (chikara): strength</div>
+                            <div class="example-word">努力 (doryoku): effort</div>
+                            <div class="example-word">体力 (tairyoku): physical strength</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="miscellaneous">
+                    <div class="kanji-character">国</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Country</h4>
+                        <p><strong>On:</strong> コク (koku)</p>
+                        <p><strong>Kun:</strong> くに (kuni)</p>
+                        <p><strong>Strokes:</strong> 8</p>
+                        <div class="example-words">
+                            <div class="example-word">国 (kuni): country</div>
+                            <div class="example-word">中国 (chūgoku): China</div>
+                            <div class="example-word">外国 (gaikoku): foreign country</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kanji-card" data-category="miscellaneous">
+                    <div class="kanji-character">語</div>
+                    <div class="kanji-details">
+                        <h4>Meaning: Language, Word</h4>
+                        <p><strong>On:</strong> ゴ (go)</p>
+                        <p><strong>Kun:</strong> かたる (kataru)</p>
+                        <p><strong>Strokes:</strong> 14</p>
+                        <div class="example-words">
+                            <div class="example-word">日本語 (nihongo): Japanese language</div>
+                            <div class="example-word">英語 (eigo): English language</div>
+                            <div class="example-word">言語 (gengo): language</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 NihonGo. All rights reserved.</p>
+        <p>Contact us: rohandutta2003@gmail.com</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('kanji-search');
+            const kanjiCards = document.querySelectorAll('.kanji-card');
+
+            searchInput.addEventListener('input', function () {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+
+                kanjiCards.forEach(card => {
+                    const kanjiCharacter = card.querySelector('.kanji-character').textContent;
+                    const kanjiDetails = card.querySelector('.kanji-details').textContent.toLowerCase();
+
+                    // Check if the search term is found in the kanji character or any details
+                    if (kanjiCharacter.includes(searchTerm) || kanjiDetails.includes(searchTerm)) {
+                        card.style.display = 'flex'; // Show the card
+                    } else {
+                        card.style.display = 'none'; // Hide the card
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
